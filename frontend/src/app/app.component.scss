@@ -1,0 +1,58 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.sidebar {
+  width: 260px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 2rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.sidebar-menu {
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 180px;
+    padding: 1rem 0.5rem;
+  }
+  .main-content {
+    padding: 1rem;
+  }
+}
